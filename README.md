@@ -8,7 +8,7 @@ Esse aplicativo tem como objetivo gerenciar programas de tv/séries/filmes. O us
   - Testes automatizados para todas as funcionalidades
   - Explicar no README como rodar o projeto e os testes
 
-#### Backend
+## Vaga Backend
   - O aplicativo deve ser criado nas versões mais recentes do Ruby e do Rails.
   - Usar RVM (.rvm-version e .rvm-gemset)
   - Testes de aceitação e unitários
@@ -17,7 +17,7 @@ Esse aplicativo tem como objetivo gerenciar programas de tv/séries/filmes. O us
   - Follow [the rules]
   - Cadastro de usuários com envio de email de confirmação
 
-#### Frontend
+## Vaga Frontend
   - Código modularizado
   - Testes de JavaScript
   - Pode utilizar um servidor backend ou armazenar os dados em LocalStorage
@@ -26,7 +26,7 @@ Esse aplicativo tem como objetivo gerenciar programas de tv/séries/filmes. O us
   - React.js
   - Utilizar algum framework MVC
 
-## Tarefas:
+## Tarefas
 
   - Criar uma feature para cadastrar as atrações. Quero ver o nome da atração, a mídia na qual assistirei e o horário que será exibido(esse item não precisa ser obrigatório).
   - Também quero ficar sabendo as próximas atrações que assistirei. Preciso que elas sejam ordenadas de acordo com a data de exibição, as mais próximas do horário atual primeiro.
