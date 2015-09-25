@@ -1,9 +1,9 @@
 Organização de atrações
----------------
+============
 
 Esse aplicativo tem como objetivo gerenciar programas de tv/séries/filmes. O usuário poderá cadastrar esses itens e definir um horário(não obrigatório) que a atração será exibida.
 
-## Requisitos:
+## Requisitos
   - Ao terminar subir o projeto no Heroku
   - Testes automatizados para todas as funcionalidades
   - Explicar no README como rodar o projeto e os testes
