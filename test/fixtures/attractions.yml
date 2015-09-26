@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  media: MyString
+  schedule: 2015-09-26 10:47:38
+  user_id: 
+
+two:
+  title: MyString
+  media: MyString
+  schedule: 2015-09-26 10:47:38
+  user_id: 
