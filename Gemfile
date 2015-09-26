@@ -1,4 +1,3 @@
-gem 'angular_csrf'
 source 'https://rubygems.org'
 
 ruby '2.2.3'
@@ -47,3 +46,5 @@ end
 
 gem 'responders', '~> 2.0'
 gem 'angular_csrf'
+gem 'angular-rails-templates'
+gem 'sprockets', '2.12.3'
