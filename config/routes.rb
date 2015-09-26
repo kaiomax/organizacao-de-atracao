@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :attractions
-  resources :users
+  resources :users, defaults: { format: 'json' }
 
   root 'application#index'
 
