@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :attractions
-  resources :users, defaults: { format: 'json' }
+  resources :users, defaults: { format: 'json' } do
+    resources :attractions, defaults: { format: 'json' }
+  end
 
   root 'application#index'
 
