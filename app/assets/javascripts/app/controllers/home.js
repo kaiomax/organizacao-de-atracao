@@ -6,5 +6,19 @@ app.controller('HomeCtrl', [
     $scope.getAttractions = function(id) {
       $scope.attractions = Attraction.query({userId: id});
     }
+
+    $scope.addAttraction = function() {
+      var attraction = new Attraction({
+        title: $scope.newAttraction.title,
+        media: $scope.newAttraction.media,
+        schedule: $scope.newAttraction.schedule,
+        userId: $scope.newAttraction.userId
+      });
+
+      attraction.$save(function(response) {
+        $scope.attractions.push (response);
+        $scope.newAttraction = {};
+      });
+    }
   }
 ]);

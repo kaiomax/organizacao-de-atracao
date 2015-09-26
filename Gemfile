@@ -1,3 +1,4 @@
+gem 'angular_csrf'
 source 'https://rubygems.org'
 
 ruby '2.2.3'
@@ -45,3 +46,4 @@ group :development do
 end
 
 gem 'responders', '~> 2.0'
+gem 'angular_csrf'
