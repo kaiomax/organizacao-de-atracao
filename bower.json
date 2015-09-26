@@ -1,0 +1,20 @@
+{
+  "name": "Watcher",
+  "version": "0.0.1",
+  "authors": [
+    "Kaio Max"
+  ],
+  "description": "Uma aplicação para gerenciar programas de tv/séries/filmes",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6"
+  }
+}
