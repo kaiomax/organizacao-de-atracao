@@ -9,6 +9,16 @@ angular.module('Watcher', ['ui.router','templates', 'ngResource'])
           url: '/',
           templateUrl: '_home.html',
           controller: 'HomeCtrl'
+        })
+        .state('users', {
+          url: '/users',
+          templateUrl: '_users.html',
+          controller: 'UsersCtrl'
+        })
+        .state('user', {
+          url: '/users/:id',
+          templateUrl: '_user.html',
+          controller: 'UserCtrl'
         });
 
         $urlRouterProvider.otherwise('/');

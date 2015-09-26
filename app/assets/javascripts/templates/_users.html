@@ -1,0 +1,10 @@
+<h1>Watcher / Usuários</h1>
+
+<ul>
+  <li ng-repeat="user in users">
+    {{ user.name }}
+    <a href="#/users/{{user.id}}">Lista de atrações</a>
+  </li>
+</ul>
+
+<ui-view></ui-view>

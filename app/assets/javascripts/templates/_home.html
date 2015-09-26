@@ -1,16 +1,4 @@
-<h1>Hello, Watcher !</h1>
-<ul>
-  <li ng-repeat="user in users">
-    {{ user.name }}
-    <button ng-click="getAttractions(user.id)">Visualizar atrações</button>
-  </li>
-</ul>
-
-<ul ng-show="attractions.length > 0">
-  <li ng-repeat="attraction in attractions">
-    {{ attraction.title }} | {{ attraction.media }} | {{ attraction.schedule | date:"dd/MM/yyyy ' - ' h:mma" }}
-  </li>
-</ul>
+<h1>Watcher</h1>
 
 <form ng-submit="addAttraction()">
   <select ng-model="newAttraction.userId">
