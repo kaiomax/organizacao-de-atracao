@@ -3,10 +3,9 @@
 \*------------------------------------*/
 
 .l-attractions-grid {
-  margin-top: 100px;
-  margin-bottom: 100px;
   padding-right: 15px;
   padding-left: 15px;
+  overflow: hidden;
 
   > .attraction {
     float: left;

@@ -4,7 +4,7 @@
 
 .form-attraction {
   width: 80%;
-  margin: 30px auto;
+  margin: 30px auto 100px;
   overflow: hidden;
 
   @media (max-width: em(1024px)) {
@@ -13,18 +13,11 @@
 
   @media (max-width: em(870px)) {
     width: 320px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: em(520px)) {
     width: 90%;
-  }
-
-  &__text {
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: $bold;
-    text-align: center;
-    color: #17ac10;
   }
 
   &__row {

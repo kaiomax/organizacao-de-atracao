@@ -4,11 +4,16 @@
 
 .header {
   padding: 10px 30px;
+  margin-bottom: 100px;
   border-bottom: 1px solid #f2f2f2;
   overflow: hidden;
 
   @media (max-width: em(480px)) {
     padding: 10px 15px;
+  }
+
+  @media (max-width: em(768px)) {
+    margin-bottom: 50px;
   }
 
   &__title {
