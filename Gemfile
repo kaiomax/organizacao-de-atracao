@@ -48,3 +48,6 @@ gem 'responders', '~> 2.0'
 gem 'angular_csrf'
 gem 'angular-rails-templates'
 gem 'sprockets', '2.12.3'
+
+gem 'bourbon'
+gem 'neat'
