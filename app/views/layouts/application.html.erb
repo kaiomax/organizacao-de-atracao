@@ -8,18 +8,6 @@
 </head>
 <body ng-app="Watcher">
 
-  <header ng-controller="HeaderCtrl">
-    <nav>
-      <ul>
-        <li ng-hide="isLogged"><a ui-sref="home" ui-sref-active="active">Home</a></li>
-        <li><a ui-sref="users" ui-sref-active="active">Usuários</a></li>
-        <li ng-show="isLogged"><a ui-sref="dashboard({ id: currentUser.id })" ui-sref-active="active">Minhas Atrações</a></li>
-      </ul>
-    </nav>
-    <span ng-show="isLogged">Olá, {{ currentUser.name }} | </span>
-    <button ng-show="isLogged" ng-click="logout()">Sair</button>
-  </header>
-
   <ui-view></ui-view>
 
 </body>
