@@ -1,5 +1,5 @@
 <div ng-class="pageTitle == 'Usuários' ? 'l-users-inner-grid' : 'l-users-grid'">
-  <div class="user-box" ng-repeat="user in users">
+  <div class="user-box" ng-repeat="user in users | orderBy:'name'">
     <a class="user-box__avatar" href="#/users/{{user.id}}">
       <img src="http://placehold.it/100x100" alt="avatar de {{ user.name }}">
     </a>

@@ -1,5 +1,5 @@
 <div class="l-attractions-grid">
-  <div class="attraction" ng-repeat="attraction in attractions">
+  <div class="attraction" ng-repeat="attraction in attractions | orderBy:'schedule'">
     <div class="attraction__wrapper">
       <div class="h-centered">
         <div class="content">
