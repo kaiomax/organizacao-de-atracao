@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    #ATTRACTION
+\*------------------------------------*/
+
+.attraction {
+  position: relative;
+  text-align: center;
+  border: 2px solid #f2f2f2;
+  @include transition(border-color .2s);
+
+  &:hover {
+    border-color: #17AC10;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: em(26px);
+    font-weight: $bold;
+    color: #616161;
+    @include transition(color .2s);
+
+    .attraction:hover & {
+      color: #333;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+    color: #9d9d9d;
+    font-size: em(14px);
+    @include transition(all .2s);
+
+    .attraction:hover & {
+      color: #333;
+      border-bottom-color: #70ce6b;
+    }
+  }
+
+  &__media {
+    float: left;
+  }
+
+  &__schedule {
+    float: right;
+  }
+}

@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #ATTRACTIONS-GRID
+\*------------------------------------*/
+
+.l-attractions-grid {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  > .attraction {
+    float: left;
+
+    @media (max-width: em(369px)) {
+      width: 100%;
+      min-height: 150px;
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: em(370px)) and (max-width: em(767px)) {
+      @include attraction-box(2, 4, 20px, 2n);
+    }
+
+    @media (min-width: em(768px)) and (max-width: em(1087px)) {
+      @include attraction-box(3, 3, 30px, 3n);
+    }
+
+    @media (min-width: em(1088px)) {
+      @include attraction-box(4, 3, 40px, 4n);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/* Omega Reset
+-------------------------------------*/
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) {
+    margin-right: flex-gutter($grid-columns, $gutter);
+  }
+  &:nth-child(#{$nth}+1) {
+    clear: none;
+  }
+}
+
+
+
+
+
+/* Attraction Box
+-------------------------------------*/
+
+// Adjust attraction box layout based on ratio per row and spacing
+
+@mixin attraction-box($ratio, $margin-right, $margin-bottom, $omega) {
+  $side: percentage( ( (100 - ( $margin-right * ($ratio - 1) ) ) / $ratio) / 100);
+
+  width: $side;
+  padding-bottom: $side;
+  margin-right: percentage($margin-right / 100);
+  margin-bottom: $margin-bottom;
+  @include omega($omega);
+}

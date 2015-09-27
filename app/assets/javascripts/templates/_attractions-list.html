@@ -1,0 +1,15 @@
+<div class="l-attractions-grid">
+  <div class="attraction" ng-repeat="attraction in attractions">
+    <div class="attraction__wrapper">
+      <div class="h-centered">
+        <div class="content">
+          <h2 class="attraction__title">{{ attraction.title }}</h2>
+        </div>
+      </div>
+      <div class="attraction__info">
+        <span class="attraction__media">{{ attraction.media }}</span>
+        <span class="attraction__schedule">{{ attraction.schedule | date:"dd/MM/yyyy ' - ' h:mma" }}</span>
+      </div>
+    </div>
+  </div>
+</div>

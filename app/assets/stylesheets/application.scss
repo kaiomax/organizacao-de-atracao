@@ -5,9 +5,14 @@
 @import 'base/variables';
 @import 'base/globals';
 
+@import 'helpers/helpers';
+@import 'helpers/mixins';
+
 @import 'modules/buttons';
 @import 'modules/hero';
 @import 'modules/user-box';
+@import 'modules/attraction';
 
 @import 'layout/users-grid';
 @import 'layout/users-inner-grid';
+@import 'layout/attractions-grid';

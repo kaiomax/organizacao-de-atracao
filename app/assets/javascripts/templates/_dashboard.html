@@ -7,8 +7,4 @@
   <input type="submit" value="Adicionar">
 </form>
 
-<ul>
-  <li ng-repeat="attraction in attractions">
-    {{ attraction.title }} | {{ attraction.media }} | {{ attraction.schedule | date:"dd/MM/yyyy ' - ' h:mma" }}
-  </li>
-</ul>
+<div ng-include="'_attractions-list.html'"></div>
