@@ -19,6 +19,11 @@ angular.module('Watcher', ['ui.router','templates', 'ngResource'])
           url: '/users/:id',
           templateUrl: '_user.html',
           controller: 'UserCtrl'
+        })
+        .state('dashboard', {
+          url: '/dashboard/:id',
+          templateUrl: '_dashboard.html',
+          controller: 'DashboardCtrl'
         });
 
         $urlRouterProvider.otherwise('/');
