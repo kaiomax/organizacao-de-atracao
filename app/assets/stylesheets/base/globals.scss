@@ -1,0 +1,14 @@
+body {
+  font-family: $main-font;
+  background: #F7F7F7;
+
+  font-size: 12px;
+
+  @media (min-width: em(768px)) {
+    font-size: 14px;
+  }
+
+  @media (min-width: em(1024px)) {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #HERO
+\*------------------------------------*/
+
+.hero {
+  margin-top: em(150px);
+  margin-bottom: em(150px);
+  text-align: center;
+  color: #050505;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: em(100px);
+    font-weight: $bold;
+  }
+
+  &__subtitle {
+    font-size: em(24px);
+    font-weight: $normal;
+  }
+}
