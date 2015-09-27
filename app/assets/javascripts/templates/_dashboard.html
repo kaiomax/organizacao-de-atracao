@@ -1,10 +1,24 @@
 <div ng-include="'_header.html'"></div>
 
-<form ng-submit="addAttraction()">
-  <input type="text" ng-model="newAttraction.title" placeholder="Título" required>
-  <input type="text" ng-model="newAttraction.media" placeholder="Mídia" required>
-  <input type="datetime-local" ng-model="newAttraction.schedule"/>
-  <input type="submit" value="Adicionar">
+<form class="form form-attraction" ng-submit="addAttraction()">
+  <p class="form-attraction__text">Insira uma nova atração</p>
+  <div class="form-attraction__row">
+    <fieldset class="form__fieldset">
+      <label class="form__label" for="title">Título:</label>
+      <input class="form__text" id="title" ng-model="newAttraction.title" type="text" placeholder="p. ex.: Pulp Fiction" required/>
+    </fieldset>
+    <fieldset class="form__fieldset">
+      <label class="form__label" for="media">Mídia:</label>
+      <input class="form__text" id="media" ng-model="newAttraction.media" type="text" placeholder="p. ex.: DVD, TV, Netflix" required/>
+    </fieldset>
+    <fieldset class="form__fieldset">
+      <label class="form__label" for="schedule">Horário:</label>
+      <input class="form__text" id="schedule" type="datetime-local" ng-model="newAttraction.schedule"/>
+    </fieldset>
+  </div>
+  <div class="form-attraction__row">
+    <button class="button button--block form__submit" type="submit">Adicionar</button>
+  </div>
 </form>
 
 <div ng-include="'_attractions-list.html'"></div>

@@ -1,0 +1,30 @@
+/* Form
+-------------------------------------*/
+
+form {
+
+  fieldset {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #9d9d9d;
+  }
+
+  input[type=text],
+  input[type=datetime-local] {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height: 40px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #9d9d9d;
+    outline: none;
+  }
+}

@@ -4,6 +4,7 @@
 @import 'base/normalize';
 @import 'base/variables';
 @import 'base/globals';
+@import 'base/form';
 
 @import 'helpers/helpers';
 @import 'helpers/mixins';
@@ -13,6 +14,7 @@
 @import 'modules/user-box';
 @import 'modules/attraction';
 @import 'modules/navbar';
+@import 'modules/form-attraction';
 
 @import 'layout/header';
 @import 'layout/users-grid';

@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #FORM-ATTRACTION
+\*------------------------------------*/
+
+.form-attraction {
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+
+  @media (max-width: em(1024px)) {
+    width: 90%;
+  }
+
+  @media (max-width: em(870px)) {
+    width: 320px;
+  }
+
+  @media (max-width: em(520px)) {
+    width: 90%;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: $bold;
+    text-align: center;
+    color: #17ac10;
+  }
+
+  &__row {
+    @include span-columns(12);
+
+    > .form__fieldset {
+      @include span-columns(12);
+
+      @media (min-width: em(870px)) {
+        @include span-columns(4 of 12);
+        @include omega(3n);
+      }
+    }
+  }
+}
