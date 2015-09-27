@@ -1,12 +1,6 @@
-<div class="hero">
+<header class="hero">
   <h1 class="hero__title">Watcher</h1>
   <h2 class="hero__subtitle">Organize suas atrações</h2>
-</div>
+</header>
 
-<ul>
-  <li ng-repeat="user in users">
-    {{ user.name }}
-    <a href="#/dashboard/{{user.id}}">Fazer login</a>
-    <a href="#/users/{{user.id}}">Lista de atrações</a>
-  </li>
-</ul>
+<div ng-include="'_users-list.html'"></div>

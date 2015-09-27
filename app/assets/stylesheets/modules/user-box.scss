@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    #USER-BOX
+\*------------------------------------*/
+
+.user-box {
+  padding: 10px;
+  border: 1px solid #e7e7e5;
+  overflow: hidden;
+  @include transition(border-color .2s);
+
+  &:hover {
+    border-color: #333;
+  }
+
+  &__avatar {
+    display: none;
+    position: relative;
+    z-index: 10;
+
+    @media (min-width: em(420px)) {
+      display: block;
+      float: left;
+      width: 100px;
+    }
+  }
+
+  &__content {
+    @media (min-width: em(420px)) {
+      float: left;
+      width: 100%;
+      padding-left: 10px;
+      margin-left: -100px;
+
+      > .inner {
+        margin-left: 100px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    line-height: 60px;
+    font-size: em(22px);
+    color: #333;
+
+    > a {
+      color: inherit;
+    }
+
+    @media (max-width: em(419px)) {
+      text-align: center;
+    }
+  }
+
+  &__button {
+    float: left;
+    width: 49%;
+    padding: 0;
+    text-align: center;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

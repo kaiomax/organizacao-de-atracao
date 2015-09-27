@@ -1,8 +1,3 @@
 <div ng-include="'_header.html'"></div>
 
-<ul>
-  <li ng-repeat="user in users">
-    {{ user.name }}
-    <a href="#/users/{{user.id}}">Lista de atrações</a>
-  </li>
-</ul>
+<div ng-include="'_users-list.html'"></div>

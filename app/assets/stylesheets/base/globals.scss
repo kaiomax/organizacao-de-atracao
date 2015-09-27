@@ -1,6 +1,5 @@
 body {
   font-family: $main-font;
-  background: #F7F7F7;
 
   font-size: 12px;
 
@@ -11,4 +10,8 @@ body {
   @media (min-width: em(1024px)) {
     font-size: 16px;
   }
+}
+
+a {
+  text-decoration: none;
 }

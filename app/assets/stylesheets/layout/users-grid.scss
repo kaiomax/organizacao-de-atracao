@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #USERS-GRID
+\*------------------------------------*/
+
+.l-users-grid {
+  padding-left: 15px;
+  padding-right: 15px;
+  @include span-columns(12);
+
+  > .user-box {
+    margin-bottom: 20px;
+    @include span-columns(12);
+
+    @media (min-width: em(940px)) {
+      @include span-columns(6 of 12);
+      @include omega(2n);
+    }
+  }
+}
