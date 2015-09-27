@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header {
+  padding: 10px 30px;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
+
+  @media (max-width: em(480px)) {
+    padding: 10px 15px;
+  }
+
+  &__title {
+    clear: both;
+    margin-top: em(30px);
+    margin-bottom: em(30px);
+    font-size: em(42px);
+    color: #9d9d9d;
+
+    .highlight {
+      color: #616161;
+
+      @media (max-width: em(480px)) {
+        display: block;
+        margin-left: 20px;
+      }
+    }
+  }
+}

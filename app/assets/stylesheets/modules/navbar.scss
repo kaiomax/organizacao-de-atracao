@@ -1,0 +1,61 @@
+/*------------------------------------*\
+    #NAVBAR
+\*------------------------------------*/
+
+.navbar {
+
+  &--primary {
+    float: left;
+  }
+
+  &--secondary {
+    float: right;
+  }
+
+  &__menu {
+    margin: 0;
+    padding-left: 0;
+
+    &__item {
+      display: inline-block;
+      list-style: none;
+      padding-right: 15px;
+      margin-right: 15px;
+      line-height: 40px;
+      border-right: 1px solid #ccc;
+
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+      font-weight: $bold;
+      color: #9d9d9d;
+      cursor: pointer;
+      @include transition(color .2s);
+
+      &:hover,
+      &.active {
+        color: #616161;
+      }
+
+      &.-avatar {
+        > img {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          vertical-align: middle;
+
+          @media (max-width: em(420px)) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
