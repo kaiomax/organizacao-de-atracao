@@ -23,6 +23,7 @@ angular.module('Watcher')
             $scope.attractions.push (response);
             $scope.newAttraction = {};
             $scope.attractionForm.$setPristine();
+            $scope.addedAttraction = true;
           });
         }
       }
