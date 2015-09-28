@@ -1,0 +1,10 @@
+/* Form validation styles
+-------------------------------------*/
+
+form input.ng-invalid.ng-dirty {
+  border-bottom: 1px solid #FA360A;
+}
+
+form input.ng-valid.ng-dirty {
+  border-bottom: 1px solid #17ac10;
+}

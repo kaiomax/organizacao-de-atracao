@@ -10,18 +10,21 @@ angular.module('Watcher')
       $scope.users = User.query();
       $scope.attractions = Attraction.query({userId: userId});
 
-      $scope.addAttraction = function() {
-        var attraction = new Attraction({
-          title: $scope.newAttraction.title,
-          media: $scope.newAttraction.media,
-          schedule: $scope.newAttraction.schedule,
-          userId: userId
-        });
+      $scope.addAttraction = function(isValid) {
+        if (isValid) {
+          var attraction = new Attraction({
+            title: $scope.newAttraction.title,
+            media: $scope.newAttraction.media,
+            schedule: $scope.newAttraction.schedule,
+            userId: userId
+          });
 
-        attraction.$save(function(response) {
-          $scope.attractions.push (response);
-          $scope.newAttraction = {};
-        });
+          attraction.$save(function(response) {
+            $scope.attractions.push (response);
+            $scope.newAttraction = {};
+            $scope.attractionForm.$setPristine();
+          });
+        }
       }
 
       $scope.$watch( AuthService.isLoggedIn, function () {
